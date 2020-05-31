@@ -26,19 +26,19 @@ function setup() {
 	 //World.add(world, ground);
 	 roof = new Roof(350,250,400,20);
 	 bob1 = new Bob(250,450);
-	 bob2 = new Bob(300,450);
-	 bob3 = new Bob(350,450);
-	 bob4 = new Bob(400,450);
-	 bob5 = new Bob(450,450);
-	 rope1 = new Rope(bob1.body,{x:250,y:250});
-	 rope2 = new Rope(bob2.body,{x:300,y:250});
-	 rope3 = new Rope(bob3.body,{x:350,y:250});
-	 rope4 = new Rope(bob4.body,{x:400,y:250});
-	 rope5 = new Rope(bob5.body,{x:450,y:250});
+	 bob2 = new Bob(295,450);
+	 bob3 = new Bob(340,450);
+	 bob4 = new Bob(385,450);
+	 bob5 = new Bob(430,450);
+	 rope1 = new Rope(bob1.body,roof.body,-bob1.diameter*2.5,0);
+	 rope2 = new Rope(bob2.body,roof.body,-bob2.diameter*1.5,0);
+	 rope3 = new Rope(bob3.body,roof.body,-bob3.diameter*0.5,0);
+	 rope4 = new Rope(bob4.body,roof.body,-bob4.diameter*-0.5,0);
+	 rope5 = new Rope(bob5.body,roof.body,-bob5.diameter*-1.5,0);
 
 
-	Engine.run(engine);
-  
+	 Engine.run(engine);
+	 keyPressed();
 }
 
 
@@ -52,11 +52,11 @@ function draw() {
   bob3.display();
   bob4.display();
   bob5.display();
-  rope1.display();
-  rope2.display();
+ rope1.display();
+rope2.display();
   rope3.display();
-  rope4.display();
-  rope5.display();
+ rope4.display();
+ rope5.display();
   
 
  
