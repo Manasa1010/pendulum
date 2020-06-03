@@ -7,7 +7,7 @@ class Bob {
           density:1
       }
       this.body = Bodies.circle(x, y, 43/2, options);
-      this.diameter=43/2;
+      this.diameter=43;
       
       World.add(world, this.body);
     }
